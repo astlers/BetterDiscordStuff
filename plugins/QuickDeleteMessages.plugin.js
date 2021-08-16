@@ -8,7 +8,7 @@ class QuickDeleteMessages {
   }
 
   getDescription() {
-    return "Hold Delete and click a message to delete it.";
+    return "Hold Enter and click a message to delete it.";
   }
 
   getAuthor() {
@@ -82,7 +82,7 @@ _qualifies = ".message-2qnXI6";
 
 onClick = function (event) {
   var channel, element, message, shiftKey;
-  if (!(AsyncKeystate.key("Delete") || "darwin" === process.platform && AsyncKeystate.key("Backspace"))) {
+  if (!(AsyncKeystate.key("Enter") || "darwin" === process.platform && AsyncKeystate.key("Backspace"))) {
     return;
   }
   ({
